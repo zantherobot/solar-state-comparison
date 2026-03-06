@@ -54,6 +54,27 @@ describe("SolarCarbonCost component", () => {
     expect(screen.getByText("Worst State")).toBeInTheDocument();
   });
 
+  it("best and worst state cards remain stable when sort changes", async () => {
+    const user = userEvent.setup();
+    render(<SolarCarbonCost />);
+
+    // Record the best/worst state names with default sort
+    const cards = screen.getAllByText(/Best State|Worst State/);
+    const bestCard = cards[0].closest("div[style]")!.parentElement!;
+    const worstCard = cards[1].closest("div[style]")!.parentElement!;
+    const bestName = bestCard.querySelector("div:nth-child(2)")!.textContent;
+    const worstName = worstCard.querySelector("div:nth-child(2)")!.textContent;
+
+    // Change sort to "State Name"
+    await user.click(screen.getByRole("button", { name: /State Name/i }));
+
+    // Best/worst should remain the same
+    const bestNameAfter = bestCard.querySelector("div:nth-child(2)")!.textContent;
+    const worstNameAfter = worstCard.querySelector("div:nth-child(2)")!.textContent;
+    expect(bestNameAfter).toBe(bestName);
+    expect(worstNameAfter).toBe(worstName);
+  });
+
   it("displays negative-cost states count", () => {
     render(<SolarCarbonCost />);
     expect(

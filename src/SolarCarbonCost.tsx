@@ -1,6 +1,6 @@
 import { useState, useMemo } from "react";
 import { stateData, metadata } from "./data";
-import { calculate, calculateAllStates, sortStates, formatDollars } from "./calculator";
+import { calculateAllStates, sortStates, formatDollars } from "./calculator";
 import type { SortKey } from "./types";
 
 function Bar({ value, maxAbs }: { value: number; maxAbs: number }) {
@@ -69,8 +69,8 @@ export default function SolarCarbonCost() {
   );
 
   const negativeCount = results.filter((r) => r.costPerTon < 0).length;
-  const bestState = sorted[0];
-  const worstState = sorted[sorted.length - 1];
+  const bestState = results[0];
+  const worstState = results[results.length - 1];
 
   return (
     <div

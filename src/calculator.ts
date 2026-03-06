@@ -1,4 +1,4 @@
-import type { StateInput, StateResult } from "./types";
+import type { StateInput, StateResult, SortKey } from "./types";
 
 // System assumptions per spec
 export const SYSTEM_SIZE_KW = 8;
@@ -85,7 +85,7 @@ export function calculateAllStates(
  */
 export function sortStates(
   results: StateResult[],
-  sortBy: string
+  sortBy: SortKey
 ): StateResult[] {
   const arr = [...results];
   arr.sort((a, b) => {

@@ -387,10 +387,11 @@ describe("sortStates", () => {
     );
   });
 
-  it("returns original order for unknown sort key", () => {
+  it("sorts by costPerTon when given costPerTon key", () => {
     const results = makeResults();
-    const sorted = sortStates(results, "unknown");
-    expect(sorted.map((r) => r.abbr)).toEqual(results.map((r) => r.abbr));
+    const sorted = sortStates(results, "costPerTon");
+    expect(sorted[0].costPerTon).toBeLessThanOrEqual(sorted[1].costPerTon);
+    expect(sorted[1].costPerTon).toBeLessThanOrEqual(sorted[2].costPerTon);
   });
 
   it("does not mutate the original array", () => {
@@ -419,9 +420,7 @@ describe("formatDollars", () => {
   });
 
   it("adds comma separators for large numbers", () => {
-    const result = formatDollars(1234);
-    expect(result).toContain("1");
-    expect(result).toContain("234");
+    expect(formatDollars(1234)).toBe("$1,234");
   });
 
   it("handles large negative numbers", () => {
