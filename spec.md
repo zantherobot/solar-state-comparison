@@ -88,17 +88,32 @@ Where:
 
 ```
 project/
+├── src/
+│   ├── calculator.ts          # Core calculation logic (pure functions)
+│   ├── types.ts               # TypeScript interfaces
+│   ├── data.ts                # Loads compiled_data.json
+│   ├── SolarCarbonCost.tsx    # Main React component (UI + visualization)
+│   ├── App.tsx                # App wrapper
+│   ├── main.tsx               # Entry point
+│   └── test/
+│       ├── setup.ts           # Test setup
+│       ├── calculator.test.ts # Calculator unit tests
+│       └── SolarCarbonCost.test.tsx  # Component tests
 ├── data/
-│   ├── fetch_energysage.py    # Scrape state-level $/W
-│   ├── fetch_eia_rates.py     # Download EIA electricity rates
-│   ├── fetch_pvwatts.py       # Hit PVWatts API per state
-│   ├── process_cambium.py     # Parse Cambium workbook, extract daytime marginal
-│   ├── compile_data.py        # Merge all sources into compiled_data.json
-│   └── compiled_data.json     # Final merged dataset
-├── app/
-│   └── solar-carbon-cost.jsx  # React visualization (imports compiled_data.json)
+│   ├── compiled_data.json     # Canonical dataset (committed, static)
+│   ├── compile_data.py        # Utility: merge sources into compiled_data.json
+│   ├── fetch_energysage.py    # Utility: scrape EnergySage $/W
+│   ├── fetch_eia_rates.py     # Utility: download EIA rates
+│   ├── fetch_pvwatts.py       # Utility: hit PVWatts API per state
+│   └── process_cambium.py     # Utility: parse Cambium workbooks
+├── server.ts                  # Express production server
+├── index.html                 # Vite entry HTML
+├── vite.config.ts             # Vite configuration
+├── vitest.config.ts           # Vitest test configuration
+├── railway.json               # Railway deployment config
+├── CLAUDE.md                  # Development guide
 ├── spec.md                    # This file
-├── requirements.txt           # Python dependencies
+├── package.json               # Dependencies and scripts
 └── LICENSE
 ```
 
@@ -120,6 +135,7 @@ project/
 5. **EIA for rates** — official government data, updated monthly
 6. **Simple payback** — easiest to explain; relative state ranking unlikely to change much vs NPV
 7. **25-year lifetime, 0.7%/yr degradation** — NREL standard
+8. **Static data** — `compiled_data.json` is committed for consistency; Python scripts are utilities for data refresh only
 
 ## Stretch Goals
 
