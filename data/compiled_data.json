@@ -1,0 +1,376 @@
+{
+  "metadata": {
+    "description": "Compiled solar carbon cost data for all 50 US states",
+    "compiled_at": "2026-03-06T04:30:14Z",
+    "sources": {
+      "cost_per_watt": "EnergySage marketplace data (2025-2026)",
+      "electricity_rate": "EIA Electric Power Monthly, Dec 2025",
+      "capacity_factor": "NREL PVWatts API v8 (8kW, 20\u00b0 tilt, south-facing)",
+      "marginal_emissions": "NREL Cambium 2024 LRMER, Mid-case, 2026, daytime avg"
+    },
+    "sources_from_api": {
+      "eia_rates": true,
+      "pvwatts": true,
+      "energysage": false,
+      "cambium": true
+    },
+    "units": {
+      "cpw": "$/W (gross, before incentives)",
+      "rate": "cents/kWh (residential average)",
+      "cf": "capacity factor (fraction of 8760 hours)",
+      "me": "lbs CO2/MWh (daytime marginal)"
+    }
+  },
+  "states": {
+    "AK": {
+      "name": "Alaska",
+      "cpw": 3.2,
+      "rate": 28.5,
+      "cf": 0.115,
+      "me": 1100
+    },
+    "AL": {
+      "name": "Alabama",
+      "cpw": 2.65,
+      "rate": 16.2,
+      "cf": 0.165,
+      "me": 1050
+    },
+    "AR": {
+      "name": "Arkansas",
+      "cpw": 2.7,
+      "rate": 13.3,
+      "cf": 0.165,
+      "me": 980
+    },
+    "AZ": {
+      "name": "Arizona",
+      "cpw": 2.15,
+      "rate": 15.2,
+      "cf": 0.205,
+      "me": 920
+    },
+    "CA": {
+      "name": "California",
+      "cpw": 2.44,
+      "rate": 33.8,
+      "cf": 0.195,
+      "me": 750
+    },
+    "CO": {
+      "name": "Colorado",
+      "cpw": 2.55,
+      "rate": 16.5,
+      "cf": 0.19,
+      "me": 1100
+    },
+    "CT": {
+      "name": "Connecticut",
+      "cpw": 2.77,
+      "rate": 30.3,
+      "cf": 0.155,
+      "me": 680
+    },
+    "DE": {
+      "name": "Delaware",
+      "cpw": 2.75,
+      "rate": 16.8,
+      "cf": 0.155,
+      "me": 820
+    },
+    "FL": {
+      "name": "Florida",
+      "cpw": 2.35,
+      "rate": 15.4,
+      "cf": 0.18,
+      "me": 900
+    },
+    "GA": {
+      "name": "Georgia",
+      "cpw": 2.55,
+      "rate": 15.5,
+      "cf": 0.17,
+      "me": 980
+    },
+    "HI": {
+      "name": "Hawaii",
+      "cpw": 3.1,
+      "rate": 39.9,
+      "cf": 0.19,
+      "me": 1350
+    },
+    "IA": {
+      "name": "Iowa",
+      "cpw": 2.85,
+      "rate": 15.6,
+      "cf": 0.155,
+      "me": 950
+    },
+    "ID": {
+      "name": "Idaho",
+      "cpw": 2.8,
+      "rate": 12.1,
+      "cf": 0.17,
+      "me": 420
+    },
+    "IL": {
+      "name": "Illinois",
+      "cpw": 2.7,
+      "rate": 18.1,
+      "cf": 0.155,
+      "me": 850
+    },
+    "IN": {
+      "name": "Indiana",
+      "cpw": 2.75,
+      "rate": 16.6,
+      "cf": 0.15,
+      "me": 1200
+    },
+    "KS": {
+      "name": "Kansas",
+      "cpw": 2.8,
+      "rate": 14.7,
+      "cf": 0.17,
+      "me": 920
+    },
+    "KY": {
+      "name": "Kentucky",
+      "cpw": 2.75,
+      "rate": 14.0,
+      "cf": 0.15,
+      "me": 1250
+    },
+    "LA": {
+      "name": "Louisiana",
+      "cpw": 2.6,
+      "rate": 12.4,
+      "cf": 0.17,
+      "me": 950
+    },
+    "MA": {
+      "name": "Massachusetts",
+      "cpw": 3.0,
+      "rate": 31.5,
+      "cf": 0.155,
+      "me": 680
+    },
+    "MD": {
+      "name": "Maryland",
+      "cpw": 2.65,
+      "rate": 17.8,
+      "cf": 0.16,
+      "me": 820
+    },
+    "ME": {
+      "name": "Maine",
+      "cpw": 2.85,
+      "rate": 29.6,
+      "cf": 0.15,
+      "me": 550
+    },
+    "MI": {
+      "name": "Michigan",
+      "cpw": 2.8,
+      "rate": 19.5,
+      "cf": 0.145,
+      "me": 1050
+    },
+    "MN": {
+      "name": "Minnesota",
+      "cpw": 2.85,
+      "rate": 15.8,
+      "cf": 0.155,
+      "me": 900
+    },
+    "MO": {
+      "name": "Missouri",
+      "cpw": 2.7,
+      "rate": 14.1,
+      "cf": 0.16,
+      "me": 1150
+    },
+    "MS": {
+      "name": "Mississippi",
+      "cpw": 2.7,
+      "rate": 14.5,
+      "cf": 0.165,
+      "me": 980
+    },
+    "MT": {
+      "name": "Montana",
+      "cpw": 2.85,
+      "rate": 13.5,
+      "cf": 0.165,
+      "me": 750
+    },
+    "NC": {
+      "name": "North Carolina",
+      "cpw": 2.55,
+      "rate": 14.8,
+      "cf": 0.165,
+      "me": 850
+    },
+    "ND": {
+      "name": "North Dakota",
+      "cpw": 3.1,
+      "rate": 11.0,
+      "cf": 0.155,
+      "me": 1100
+    },
+    "NE": {
+      "name": "Nebraska",
+      "cpw": 3.0,
+      "rate": 13.5,
+      "cf": 0.165,
+      "me": 1050
+    },
+    "NH": {
+      "name": "New Hampshire",
+      "cpw": 2.85,
+      "rate": 26.5,
+      "cf": 0.15,
+      "me": 600
+    },
+    "NJ": {
+      "name": "New Jersey",
+      "cpw": 2.65,
+      "rate": 20.5,
+      "cf": 0.155,
+      "me": 750
+    },
+    "NM": {
+      "name": "New Mexico",
+      "cpw": 2.5,
+      "rate": 15.0,
+      "cf": 0.2,
+      "me": 920
+    },
+    "NV": {
+      "name": "Nevada",
+      "cpw": 2.3,
+      "rate": 13.0,
+      "cf": 0.2,
+      "me": 880
+    },
+    "NY": {
+      "name": "New York",
+      "cpw": 2.8,
+      "rate": 24.5,
+      "cf": 0.15,
+      "me": 700
+    },
+    "OH": {
+      "name": "Ohio",
+      "cpw": 2.7,
+      "rate": 16.5,
+      "cf": 0.145,
+      "me": 1050
+    },
+    "OK": {
+      "name": "Oklahoma",
+      "cpw": 2.65,
+      "rate": 13.0,
+      "cf": 0.175,
+      "me": 900
+    },
+    "OR": {
+      "name": "Oregon",
+      "cpw": 2.7,
+      "rate": 14.0,
+      "cf": 0.16,
+      "me": 480
+    },
+    "PA": {
+      "name": "Pennsylvania",
+      "cpw": 2.65,
+      "rate": 18.5,
+      "cf": 0.15,
+      "me": 820
+    },
+    "RI": {
+      "name": "Rhode Island",
+      "cpw": 2.8,
+      "rate": 31.3,
+      "cf": 0.15,
+      "me": 680
+    },
+    "SC": {
+      "name": "South Carolina",
+      "cpw": 2.5,
+      "rate": 15.5,
+      "cf": 0.17,
+      "me": 850
+    },
+    "SD": {
+      "name": "South Dakota",
+      "cpw": 3.1,
+      "rate": 13.8,
+      "cf": 0.165,
+      "me": 900
+    },
+    "TN": {
+      "name": "Tennessee",
+      "cpw": 2.85,
+      "rate": 13.5,
+      "cf": 0.155,
+      "me": 980
+    },
+    "TX": {
+      "name": "Texas",
+      "cpw": 2.19,
+      "rate": 15.9,
+      "cf": 0.18,
+      "me": 950
+    },
+    "UT": {
+      "name": "Utah",
+      "cpw": 2.5,
+      "rate": 13.0,
+      "cf": 0.19,
+      "me": 1050
+    },
+    "VA": {
+      "name": "Virginia",
+      "cpw": 2.6,
+      "rate": 15.5,
+      "cf": 0.16,
+      "me": 800
+    },
+    "VT": {
+      "name": "Vermont",
+      "cpw": 2.9,
+      "rate": 22.5,
+      "cf": 0.145,
+      "me": 350
+    },
+    "WA": {
+      "name": "Washington",
+      "cpw": 2.75,
+      "rate": 12.5,
+      "cf": 0.145,
+      "me": 380
+    },
+    "WI": {
+      "name": "Wisconsin",
+      "cpw": 2.8,
+      "rate": 17.5,
+      "cf": 0.15,
+      "me": 1000
+    },
+    "WV": {
+      "name": "West Virginia",
+      "cpw": 2.8,
+      "rate": 14.5,
+      "cf": 0.145,
+      "me": 1350
+    },
+    "WY": {
+      "name": "Wyoming",
+      "cpw": 2.9,
+      "rate": 12.5,
+      "cf": 0.175,
+      "me": 1200
+    }
+  }
+}

@@ -1,0 +1,466 @@
+{
+  "source": "NREL PVWatts API v8",
+  "description": "Annual solar production for 8kW residential system by state",
+  "parameters": {
+    "system_capacity_kw": 8,
+    "module_type": 0,
+    "losses_pct": 14,
+    "array_type": 1,
+    "tilt_deg": 20,
+    "azimuth_deg": 180
+  },
+  "fetched_at": "2026-03-06T04:30:01Z",
+  "api_failures": 50,
+  "production": {
+    "AK": {
+      "ac_annual_kwh": 8059,
+      "capacity_factor": 0.115,
+      "solrad_annual": null,
+      "city": "Anchorage",
+      "lat": 61.218,
+      "lon": -149.9,
+      "fallback": true
+    },
+    "AL": {
+      "ac_annual_kwh": 11563,
+      "capacity_factor": 0.165,
+      "solrad_annual": null,
+      "city": "Montgomery",
+      "lat": 32.377,
+      "lon": -86.3,
+      "fallback": true
+    },
+    "AR": {
+      "ac_annual_kwh": 11563,
+      "capacity_factor": 0.165,
+      "solrad_annual": null,
+      "city": "Little Rock",
+      "lat": 34.747,
+      "lon": -92.29,
+      "fallback": true
+    },
+    "AZ": {
+      "ac_annual_kwh": 14366,
+      "capacity_factor": 0.205,
+      "solrad_annual": null,
+      "city": "Phoenix",
+      "lat": 33.449,
+      "lon": -112.074,
+      "fallback": true
+    },
+    "CA": {
+      "ac_annual_kwh": 13666,
+      "capacity_factor": 0.195,
+      "solrad_annual": null,
+      "city": "Los Angeles",
+      "lat": 34.052,
+      "lon": -118.244,
+      "fallback": true
+    },
+    "CO": {
+      "ac_annual_kwh": 13315,
+      "capacity_factor": 0.19,
+      "solrad_annual": null,
+      "city": "Denver",
+      "lat": 39.739,
+      "lon": -104.99,
+      "fallback": true
+    },
+    "CT": {
+      "ac_annual_kwh": 10862,
+      "capacity_factor": 0.155,
+      "solrad_annual": null,
+      "city": "Hartford",
+      "lat": 41.764,
+      "lon": -72.685,
+      "fallback": true
+    },
+    "DE": {
+      "ac_annual_kwh": 10862,
+      "capacity_factor": 0.155,
+      "solrad_annual": null,
+      "city": "Wilmington",
+      "lat": 39.745,
+      "lon": -75.547,
+      "fallback": true
+    },
+    "FL": {
+      "ac_annual_kwh": 12614,
+      "capacity_factor": 0.18,
+      "solrad_annual": null,
+      "city": "Orlando",
+      "lat": 28.538,
+      "lon": -81.379,
+      "fallback": true
+    },
+    "GA": {
+      "ac_annual_kwh": 11914,
+      "capacity_factor": 0.17,
+      "solrad_annual": null,
+      "city": "Atlanta",
+      "lat": 33.749,
+      "lon": -84.388,
+      "fallback": true
+    },
+    "HI": {
+      "ac_annual_kwh": 13315,
+      "capacity_factor": 0.19,
+      "solrad_annual": null,
+      "city": "Honolulu",
+      "lat": 21.307,
+      "lon": -157.858,
+      "fallback": true
+    },
+    "IA": {
+      "ac_annual_kwh": 10862,
+      "capacity_factor": 0.155,
+      "solrad_annual": null,
+      "city": "Des Moines",
+      "lat": 41.586,
+      "lon": -93.625,
+      "fallback": true
+    },
+    "ID": {
+      "ac_annual_kwh": 11914,
+      "capacity_factor": 0.17,
+      "solrad_annual": null,
+      "city": "Boise",
+      "lat": 43.615,
+      "lon": -116.202,
+      "fallback": true
+    },
+    "IL": {
+      "ac_annual_kwh": 10862,
+      "capacity_factor": 0.155,
+      "solrad_annual": null,
+      "city": "Chicago",
+      "lat": 41.878,
+      "lon": -87.63,
+      "fallback": true
+    },
+    "IN": {
+      "ac_annual_kwh": 10512,
+      "capacity_factor": 0.15,
+      "solrad_annual": null,
+      "city": "Indianapolis",
+      "lat": 39.768,
+      "lon": -86.158,
+      "fallback": true
+    },
+    "KS": {
+      "ac_annual_kwh": 11914,
+      "capacity_factor": 0.17,
+      "solrad_annual": null,
+      "city": "Topeka",
+      "lat": 39.048,
+      "lon": -95.678,
+      "fallback": true
+    },
+    "KY": {
+      "ac_annual_kwh": 10512,
+      "capacity_factor": 0.15,
+      "solrad_annual": null,
+      "city": "Louisville",
+      "lat": 38.253,
+      "lon": -85.759,
+      "fallback": true
+    },
+    "LA": {
+      "ac_annual_kwh": 11914,
+      "capacity_factor": 0.17,
+      "solrad_annual": null,
+      "city": "Baton Rouge",
+      "lat": 30.458,
+      "lon": -91.14,
+      "fallback": true
+    },
+    "MA": {
+      "ac_annual_kwh": 10862,
+      "capacity_factor": 0.155,
+      "solrad_annual": null,
+      "city": "Boston",
+      "lat": 42.36,
+      "lon": -71.059,
+      "fallback": true
+    },
+    "MD": {
+      "ac_annual_kwh": 11213,
+      "capacity_factor": 0.16,
+      "solrad_annual": null,
+      "city": "Baltimore",
+      "lat": 39.29,
+      "lon": -76.612,
+      "fallback": true
+    },
+    "ME": {
+      "ac_annual_kwh": 10512,
+      "capacity_factor": 0.15,
+      "solrad_annual": null,
+      "city": "Portland",
+      "lat": 43.661,
+      "lon": -70.256,
+      "fallback": true
+    },
+    "MI": {
+      "ac_annual_kwh": 10162,
+      "capacity_factor": 0.145,
+      "solrad_annual": null,
+      "city": "Detroit",
+      "lat": 42.331,
+      "lon": -83.046,
+      "fallback": true
+    },
+    "MN": {
+      "ac_annual_kwh": 10862,
+      "capacity_factor": 0.155,
+      "solrad_annual": null,
+      "city": "Minneapolis",
+      "lat": 44.978,
+      "lon": -93.265,
+      "fallback": true
+    },
+    "MO": {
+      "ac_annual_kwh": 11213,
+      "capacity_factor": 0.16,
+      "solrad_annual": null,
+      "city": "St. Louis",
+      "lat": 38.627,
+      "lon": -90.199,
+      "fallback": true
+    },
+    "MS": {
+      "ac_annual_kwh": 11563,
+      "capacity_factor": 0.165,
+      "solrad_annual": null,
+      "city": "Jackson",
+      "lat": 32.299,
+      "lon": -90.185,
+      "fallback": true
+    },
+    "MT": {
+      "ac_annual_kwh": 11563,
+      "capacity_factor": 0.165,
+      "solrad_annual": null,
+      "city": "Missoula",
+      "lat": 46.872,
+      "lon": -113.994,
+      "fallback": true
+    },
+    "NC": {
+      "ac_annual_kwh": 11563,
+      "capacity_factor": 0.165,
+      "solrad_annual": null,
+      "city": "Raleigh",
+      "lat": 35.78,
+      "lon": -78.639,
+      "fallback": true
+    },
+    "ND": {
+      "ac_annual_kwh": 10862,
+      "capacity_factor": 0.155,
+      "solrad_annual": null,
+      "city": "Fargo",
+      "lat": 46.877,
+      "lon": -96.789,
+      "fallback": true
+    },
+    "NE": {
+      "ac_annual_kwh": 11563,
+      "capacity_factor": 0.165,
+      "solrad_annual": null,
+      "city": "Omaha",
+      "lat": 41.256,
+      "lon": -95.934,
+      "fallback": true
+    },
+    "NH": {
+      "ac_annual_kwh": 10512,
+      "capacity_factor": 0.15,
+      "solrad_annual": null,
+      "city": "Concord",
+      "lat": 43.207,
+      "lon": -71.538,
+      "fallback": true
+    },
+    "NJ": {
+      "ac_annual_kwh": 10862,
+      "capacity_factor": 0.155,
+      "solrad_annual": null,
+      "city": "Trenton",
+      "lat": 40.058,
+      "lon": -74.406,
+      "fallback": true
+    },
+    "NM": {
+      "ac_annual_kwh": 14016,
+      "capacity_factor": 0.2,
+      "solrad_annual": null,
+      "city": "Albuquerque",
+      "lat": 35.084,
+      "lon": -106.651,
+      "fallback": true
+    },
+    "NV": {
+      "ac_annual_kwh": 14016,
+      "capacity_factor": 0.2,
+      "solrad_annual": null,
+      "city": "Las Vegas",
+      "lat": 36.175,
+      "lon": -115.137,
+      "fallback": true
+    },
+    "NY": {
+      "ac_annual_kwh": 10512,
+      "capacity_factor": 0.15,
+      "solrad_annual": null,
+      "city": "New York City",
+      "lat": 40.713,
+      "lon": -74.006,
+      "fallback": true
+    },
+    "OH": {
+      "ac_annual_kwh": 10162,
+      "capacity_factor": 0.145,
+      "solrad_annual": null,
+      "city": "Columbus",
+      "lat": 39.961,
+      "lon": -82.999,
+      "fallback": true
+    },
+    "OK": {
+      "ac_annual_kwh": 12264,
+      "capacity_factor": 0.175,
+      "solrad_annual": null,
+      "city": "Oklahoma City",
+      "lat": 35.468,
+      "lon": -97.516,
+      "fallback": true
+    },
+    "OR": {
+      "ac_annual_kwh": 11213,
+      "capacity_factor": 0.16,
+      "solrad_annual": null,
+      "city": "Portland",
+      "lat": 45.515,
+      "lon": -122.679,
+      "fallback": true
+    },
+    "PA": {
+      "ac_annual_kwh": 10512,
+      "capacity_factor": 0.15,
+      "solrad_annual": null,
+      "city": "Philadelphia",
+      "lat": 39.953,
+      "lon": -75.164,
+      "fallback": true
+    },
+    "RI": {
+      "ac_annual_kwh": 10512,
+      "capacity_factor": 0.15,
+      "solrad_annual": null,
+      "city": "Providence",
+      "lat": 41.824,
+      "lon": -71.413,
+      "fallback": true
+    },
+    "SC": {
+      "ac_annual_kwh": 11914,
+      "capacity_factor": 0.17,
+      "solrad_annual": null,
+      "city": "Columbia",
+      "lat": 34.0,
+      "lon": -81.035,
+      "fallback": true
+    },
+    "SD": {
+      "ac_annual_kwh": 11563,
+      "capacity_factor": 0.165,
+      "solrad_annual": null,
+      "city": "Sioux Falls",
+      "lat": 43.55,
+      "lon": -96.701,
+      "fallback": true
+    },
+    "TN": {
+      "ac_annual_kwh": 10862,
+      "capacity_factor": 0.155,
+      "solrad_annual": null,
+      "city": "Nashville",
+      "lat": 36.163,
+      "lon": -86.782,
+      "fallback": true
+    },
+    "TX": {
+      "ac_annual_kwh": 12614,
+      "capacity_factor": 0.18,
+      "solrad_annual": null,
+      "city": "Austin",
+      "lat": 30.267,
+      "lon": -97.743,
+      "fallback": true
+    },
+    "UT": {
+      "ac_annual_kwh": 13315,
+      "capacity_factor": 0.19,
+      "solrad_annual": null,
+      "city": "Salt Lake City",
+      "lat": 40.761,
+      "lon": -111.891,
+      "fallback": true
+    },
+    "VA": {
+      "ac_annual_kwh": 11213,
+      "capacity_factor": 0.16,
+      "solrad_annual": null,
+      "city": "Richmond",
+      "lat": 37.541,
+      "lon": -77.436,
+      "fallback": true
+    },
+    "VT": {
+      "ac_annual_kwh": 10162,
+      "capacity_factor": 0.145,
+      "solrad_annual": null,
+      "city": "Montpelier",
+      "lat": 44.26,
+      "lon": -72.576,
+      "fallback": true
+    },
+    "WA": {
+      "ac_annual_kwh": 10162,
+      "capacity_factor": 0.145,
+      "solrad_annual": null,
+      "city": "Seattle",
+      "lat": 47.606,
+      "lon": -122.332,
+      "fallback": true
+    },
+    "WI": {
+      "ac_annual_kwh": 10512,
+      "capacity_factor": 0.15,
+      "solrad_annual": null,
+      "city": "Madison",
+      "lat": 43.075,
+      "lon": -89.384,
+      "fallback": true
+    },
+    "WV": {
+      "ac_annual_kwh": 10162,
+      "capacity_factor": 0.145,
+      "solrad_annual": null,
+      "city": "Charleston",
+      "lat": 38.35,
+      "lon": -81.633,
+      "fallback": true
+    },
+    "WY": {
+      "ac_annual_kwh": 12264,
+      "capacity_factor": 0.175,
+      "solrad_annual": null,
+      "city": "Cheyenne",
+      "lat": 41.14,
+      "lon": -104.82,
+      "fallback": true
+    }
+  }
+}
