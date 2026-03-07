@@ -21,6 +21,9 @@
     "energy",
     "climate"
   ],
+  "engines": {
+    "node": ">=22.12.0"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
